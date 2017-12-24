@@ -7,7 +7,7 @@ def prime?(n)
     return true
   end
 
-  floor = 2
+  floor = 4
   ceil = Math.sqrt(n).floor
 
   (floor..ceil).each do |i|
