@@ -7,7 +7,7 @@ def prime?(n)
     return true
   end
 
-  floor = 4
+  floor = 2
   ceil = n*n
 
   (floor..ceil).each do |i|
