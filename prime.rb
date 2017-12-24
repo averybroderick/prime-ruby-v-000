@@ -10,7 +10,7 @@ def prime?(n)
   floor = 4
   ceil = n*n
 
-  floor..ceil.each do |i|
+  (floor..ceil).each do |i|
     if n % i == 0
       return false
     else
