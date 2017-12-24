@@ -3,6 +3,9 @@ def prime?(n)
   if n <=1
     return false
   end
-  Math.sqrt(n).floor.downto(2).each {|i| return false if n % i == 0}
+
+  ceil = Math.sqrt(n)
+  floor = 2
+  floor..ceil.each {|i| return false if n % i == 0}
   true
 end
