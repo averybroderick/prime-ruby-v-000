@@ -1,5 +1,5 @@
 def prime(n)
-  if n <=1 
+  if n <=1
     return false
   end
 
@@ -8,7 +8,7 @@ def prime(n)
   end
 
   floor = 4
-  ceil = n*n 
+  ceil = n*n
 
   floor..ceil.each do |i|
     if n % i == 0
