@@ -6,6 +6,10 @@ def prime?(n)
 
   ceil = Math.sqrt(n)
   floor = 2
-  floor..ceil.each {|i| return false if n % i == 0}
-  true
+  floor..ceil.each do |i| 
+    if n % i == 0
+      return false
+    else
+      return true
+    end
 end
