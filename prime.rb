@@ -11,7 +11,7 @@ def prime?(n)
   ceil = n*n
 
   (floor..ceil).each do |i|
-    if n % i == 0
+    if n % i == 0 && n != i
       return false
     else
       return true
