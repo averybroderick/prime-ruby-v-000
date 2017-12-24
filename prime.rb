@@ -8,7 +8,7 @@ def prime?(n)
   end
 
   floor = 2
-  ceil = n*n
+  ceil = Math.sqrt(n).floor
 
   (floor..ceil).each do |i|
     if n % i == 0 && n != i
