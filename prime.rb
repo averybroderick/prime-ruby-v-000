@@ -5,6 +5,7 @@ def prime?(n)
   end
 
   ceil = Math.sqrt(n)
+
   2..ceil.each do |i|
     if n % i == 0
       return false
@@ -12,4 +13,5 @@ def prime?(n)
       return true
     end
   end
+  
 end
